@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Actividad1</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="calculadora">CALCULADORA</string>
+    <string name="salario_bruto_anual">Salario bruto anual</string>
+    <string name="introduce_una_cantidad">Introduce una cantidad</string>
+    <string name="_30000">30000</string>
+    <string name="n_mero_de_pagas">Número de pagas</string>
+    <string name="edad">Edad</string>
+    <string name="calcula">Calcula!</string>
+    <string name="estado_civil">Estado civil</string>
+    <string name="grado_de_discapacidad">Grado de discapacidad</string>
+    <string name="grupo_profesional">Grupo profesional</string>
+    <string name="n_mero_de_hijos">Número de hijos</string>
+    <string name="_12_o_14">12 o 14</string>
+    <string name="_1_2_3">1, 2, 3...</string>
+    <string name="soltero_casado">Soltero, casado...</string>
+    <string name="salario_neto_total">SALARIO NETO TOTAL</string>
+    <string name="ppp">...</string>
+    <string name="salario_neto_tot">SALARIO NETO TOTAL</string>
+    <string name="volver">VOLVER</string>
+    <string name="salario_neto_mensual">SALARIO NETO MENSUAL</string>
+    <string name="irpf">IRPF</string>
+    <string name="deducciones">Deducciones</string>
+
+
+</resources>

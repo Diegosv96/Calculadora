@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/titulo"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@color/background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/calculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/titulo"
+        app:layout_constraintEnd_toEndOf="@+id/titulo"
+        app:layout_constraintStart_toStartOf="@+id/titulo"
+        app:layout_constraintTop_toTopOf="@+id/titulo" />
+
+    <TextView
+        android:id="@+id/salarioText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salario_bruto_anual"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <EditText
+        android:id="@+id/salario"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:hint="@string/introduce_una_cantidad"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salarioText"
+        app:layout_constraintTop_toBottomOf="@+id/salarioText" />
+
+    <TextView
+        android:id="@+id/pagasText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/n_mero_de_pagas"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salario"
+        app:layout_constraintTop_toBottomOf="@+id/salario"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/pagas"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:hint="@string/_12_o_14"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salarioText"
+        app:layout_constraintTop_toBottomOf="@+id/pagasText" />
+
+    <TextView
+        android:id="@+id/edadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edad"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salario"
+        app:layout_constraintTop_toBottomOf="@+id/pagas"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:hint="@string/introduce_una_cantidad"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salarioText"
+        app:layout_constraintTop_toBottomOf="@+id/edadText" />
+
+    <TextView
+        android:id="@+id/grupoProfText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grupo_profesional"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salario"
+        app:layout_constraintTop_toBottomOf="@+id/edad"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/grupoProf"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:hint="@string/_1_2_3"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salarioText"
+        app:layout_constraintTop_toBottomOf="@+id/grupoProfText" />
+
+    <TextView
+        android:id="@+id/gradoDiscText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grado_de_discapacidad"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salario"
+        app:layout_constraintTop_toBottomOf="@+id/grupoProf"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/gradoDisc"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:hint="@string/introduce_una_cantidad"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salarioText"
+        app:layout_constraintTop_toBottomOf="@+id/gradoDiscText" />
+
+    <TextView
+        android:id="@+id/estadoCivilText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estado_civil"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salario"
+        app:layout_constraintTop_toBottomOf="@+id/gradoDisc"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/estadoCivil"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:hint="@string/soltero_casado"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salarioText"
+        app:layout_constraintTop_toBottomOf="@+id/estadoCivilText" />
+
+    <TextView
+        android:id="@+id/numeroHijosText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/n_mero_de_hijos"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salario"
+        app:layout_constraintTop_toBottomOf="@+id/estadoCivil"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/numeroHijos"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:hint="@string/introduce_una_cantidad"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/salarioText"
+        app:layout_constraintTop_toBottomOf="@+id/numeroHijosText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calcula"
+        android:textAlignment="center"
+        android:textColor="@color/background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

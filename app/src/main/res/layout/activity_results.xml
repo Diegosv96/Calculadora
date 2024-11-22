@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background2"
+    tools:context=".Results">
+
+    <View
+        android:id="@+id/titulo2"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@color/background1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/calculadora2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/titulo2"
+        app:layout_constraintEnd_toEndOf="@+id/titulo2"
+        app:layout_constraintStart_toStartOf="@+id/titulo2"
+        app:layout_constraintTop_toTopOf="@+id/titulo2" />
+
+    <TextView
+        android:id="@+id/salarioAnualText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salario_neto_total"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo2"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/salarioAnual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ppp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salarioAnualText"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/salarioMensualText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salario_neto_mensual"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salarioAnual"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/salarioMensual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ppp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salarioMensualText"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/irpfText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/irpf"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salarioMensual"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/irpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ppp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/irpfText"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/deduccionesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deducciones"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/irpf"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/deducciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ppp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deduccionesText"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volver"
+        android:textAlignment="center"
+        android:textColor="@color/background2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
